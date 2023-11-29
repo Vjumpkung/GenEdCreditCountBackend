@@ -7,6 +7,6 @@ router = APIRouter(prefix="/gened", tags=["gened"])
 
 @router.get("/")
 async def gened(
-    stdid: str, x_access_token: str | None = Header("x-access-token")
+    stdid: str, x_access_token: str | None = Header("X-Access-Token")
 ) -> GenEdResponseDto:
     return genedService(stdid, x_access_token)
