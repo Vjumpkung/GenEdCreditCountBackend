@@ -1,3 +1,4 @@
+pymyku
 pymongo
 python-dotenv
 requests
