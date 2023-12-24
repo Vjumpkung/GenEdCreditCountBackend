@@ -6,5 +6,5 @@ router = APIRouter(prefix="/login", tags=["login"])
 
 
 @router.post("/")
-async def login(loginBodyDto: LoginBodyDto):
-    return await loginService(loginBodyDto)
+def login(loginBodyDto: LoginBodyDto):
+    return loginService(loginBodyDto)
